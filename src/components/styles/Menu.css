@@ -1,0 +1,216 @@
+.menus {
+  background-color: #0E0D0A;
+}
+.menus .hero {
+  background-image: url("https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/kouji-tsuru-j1-ANUxWJh4-unsplash-1200x800.jpg");
+  height: 77vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+  margin-bottom: 120px;
+}
+.menus .hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.menus .hero h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  z-index: 1;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.menus .menu-non-img {
+  margin-bottom: 120px;
+}
+.menus .menu-non-img .container .menu-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4%;
+}
+.menus .menu-non-img .container .menu {
+  display: flex;
+  justify-content: space-between;
+}
+.menus .menu-non-img .container .menu .menu-list {
+  list-style: none;
+  color: #fff;
+  width: 100%;
+}
+.menus .menu-non-img .container .menu .menu-list .menu-item {
+  padding: 20px 0;
+}
+.menus .menu-non-img .container .menu .menu-list .menu-item .meal-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+.menus .menu-non-img .container .menu .menu-list .menu-item .meal-name .line {
+  height: 1px;
+  width: 40%;
+  margin: 0 5px;
+  background-color: rgb(206, 191, 191);
+  opacity: 0.2;
+}
+.menus .menu-non-img .container .menu .menu-list .menu-item .meal-name .prices .price-gls {
+  margin-right: 15px;
+}
+.menus .menu-non-img .container .menu .menu-list .menu-item .meal-japanese-name {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+}
+.menus .menu-non-img .container .menu .menu-list {
+  margin-right: 5%;
+}
+.menus .menu-non-img .container .menu .menu-list:last-child {
+  margin-right: 0;
+}
+.menus .menu-with-img {
+  margin-bottom: 120px;
+}
+.menus .menu-with-img .container {
+  display: flex;
+  justify-content: center;
+}
+.menus .menu-with-img .container .col {
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+}
+.menus .menu-with-img .container .col .menu-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menus .menu-with-img .container .col .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  background-color: #000;
+  padding: 40px;
+  height: 100%;
+}
+.menus .menu-with-img .container .col .menu .menu-list {
+  list-style: none;
+  color: #fff;
+  width: 100%;
+}
+.menus .menu-with-img .container .col .menu .menu-list .menu-item {
+  padding: 20px 0;
+}
+.menus .menu-with-img .container .col .menu .menu-list .menu-item .meal-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+.menus .menu-with-img .container .col .menu .menu-list .menu-item .meal-name .line {
+  height: 1px;
+  width: 40%;
+  margin: 0 5px;
+  background-color: rgb(206, 191, 191);
+  opacity: 0.2;
+}
+.menus .menu-with-img .container .col .menu .menu-list .menu-item .meal-name .prices .price-gls {
+  margin-right: 15px;
+}
+.menus .menu-with-img .container .col .menu .menu-list .menu-item .meal-japanese-name {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+}
+.menus .menu-with-img .container .col .menu .menu-title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 4%;
+}
+.menus .menu-with-img .container .col .menu .price-headings {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: rgb(206, 206, 206);
+  width: 100%;
+  margin-right: 3%;
+}
+.menus .menu-with-img .container .col .menu .price-headings .gls {
+  margin-right: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .menus .hero {
+    margin-bottom: 50px;
+  }
+  .menus .hero h1 {
+    font-size: 48px;
+  }
+  .menus .menu-non-img {
+    margin-bottom: 50px;
+  }
+  .menus .menu-non-img .container .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menus .menu-non-img .container .menu .menu-list .menu-item .meal-name .line {
+    visibility: hidden;
+  }
+  .menus .menu-with-img {
+    margin-bottom: 50px;
+  }
+  .menus .menu-with-img .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menus .menu-with-img .container .flex-1 {
+    order: 1;
+  }
+  .menus .menu-with-img .container .flex-2 {
+    order: 2;
+  }
+  .menus .menu-with-img .container .col {
+    width: 100%;
+    height: 100%;
+  }
+  .menus .menu-with-img .container .col .menu-img {
+    display: none;
+  }
+  .menus .menu-with-img .container .col .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menus .menu-with-img .container .col .menu .menu-list .menu-item .meal-name .line {
+    visibility: hidden;
+  }
+}/*# sourceMappingURL=Menu.css.map */

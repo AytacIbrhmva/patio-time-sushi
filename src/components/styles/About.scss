@@ -1,0 +1,446 @@
+@import './variable';
+
+.about {
+    background-color: $bg-dark;
+    // hero
+    .hero {
+        background-image: url('https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/jesse-ballantyne-9r5kHbw51fk-unsplash-1.jpg');
+        height: 75vh;
+        background-size: cover;
+        background-position: center ;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: #fff;
+            font-size: 80px;
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+            z-index: 1;
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+    }
+    //mixin
+    @mixin col-text() {
+        width: 450px;
+        // heading
+        .heading {
+            display: flex;
+            color: $orange;
+            font-size: 18px;
+            font-family: "Jost", sans-serif;
+            font-weight: 600;
+            position: relative;
+            align-items: center;
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                width: 70px;
+                height: 2px;
+                background-color: $orange; 
+                opacity: 0.5;
+            }
+        }
+        // title
+        .title {
+            margin: 20px 0;
+            color: #fff;
+            font-size: 50px;
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        // desc 
+        .desc {
+            color: #fff;
+            font-size: 18px;
+            font-family: "Jost", sans-serif;
+            font-weight: 400;
+        }
+    }    
+    @mixin container() {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;  
+    }
+    @mixin cta() {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 5px;
+        font-family: 'Jost', sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $orange;
+            transition: 450ms;
+        }
+        &:hover::after {
+            width: 0;
+        }
+    }
+    // founded history 
+    .founded-year {
+        margin-top: 120px;
+        margin-bottom: 120px;
+        .container {
+            @include container();
+            .col {
+                // img
+                .col-imgs {
+                    position: relative;
+                    .sushi-img {
+                        width: 370px;
+                        margin-top: 150px;
+                    }
+                    .crab-img {
+                        width: 421.22px;
+                        margin-left: -145px;
+                        position: absolute;
+                    }
+                }
+                // text
+                .col-text {
+                    @include col-text();
+                }
+            }
+        }
+    }
+    // where began
+    .where-began {
+        margin-bottom: 180px;
+        .container {
+            @include container();
+            .col {
+                // text
+                .col-text {
+                    @include col-text();
+                }
+                // imgs
+                .col-imgs {
+                    .chief-img {
+                        width: 453.61px;
+                        z-index: 111;
+                        position: absolute;
+                        margin-left: -450px;
+                        margin-top: -300px
+                    }
+                    .light-img {
+                        width: 324.02px;  
+                        position: absolute;
+                        z-index: 1;
+                        margin-left: -640px;
+                        margin-top: -200px
+                    }
+                }
+            }
+        }
+    }
+    // chefs img
+    .chefs-img {
+        background-image: url('https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/hennie-stander-sHp2LtuC7Co-unsplash-2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80vh;
+        position: relative;
+        margin-bottom: 120px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+    // enjoy our food
+    .enjoy-our-food {
+        margin-bottom: 300px;
+        .container {
+            @include container();
+            .col {
+                // text
+                .col-text {
+                    @include col-text();
+                    .cta {
+                       @include cta();
+                    }
+                }
+                // imgs
+                .col-imgs {
+                    .sushi-california-img {
+                        width: 388.81px;
+                        position: absolute;
+                        margin-left: -650px;
+                        margin-top: -250px;
+                    }
+                    .sushi-wasabi-img {
+                        width: 324.02px;
+                        position: absolute;
+                        margin-left: -325px;
+                        margin-top: -200px;
+                    }
+                }
+            }
+        }
+    }
+    // join us
+    .join-us {
+        margin-bottom: 120px;
+        .container {
+            @include container();
+            .col {
+                // imgs
+                .col-imgs {
+                    .ramen-img {
+                        width: 405.02px;
+                        position: absolute;
+                        margin-left: -130px;
+                        margin-top: -118px;
+                    }
+                    .smoothie-img {
+                        width: 370px;
+                    }
+                }
+                // text
+                .col-text {
+                    margin-top: -50px;
+                    @include col-text();
+                    .cta {
+                        @include cta();
+                    }
+                    // jobs table
+                    .jobs-table {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin: 45px 0;
+                        tr {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px 0;
+                            position: relative;
+                            padding: 10px 0;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                height: 1px;
+                                left: 0;
+                                bottom: 0;
+                                background-color: #6b6969;
+                                opacity: 0.3;
+                            }
+                            :nth-child(1) {
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 1px;
+                                    left: 0;
+                                    top: 0;
+                                    background-color: #6b6969;
+                                    opacity: 0.3; 
+                                }
+                            }
+                            .id {
+                                font-family: 'Jost', sans-serif;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #6b6969;
+                            }
+                            .job {
+                                font-family: 'Jost', sans-serif;
+                                font-size: 18px;
+                                font-weight: 500;
+                                padding-left: 20px;
+                                color: #fff
+                            }                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// tablet
+@media only screen and (max-width: 768px) {
+    .about {
+        .hero {
+            background-position: center;
+            height: 70vh;
+            h1 {
+                font-size: 48px;
+            }
+        }
+        @mixin container () {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @mixin col-text () {
+            width: 100%;
+            .title {
+                font-size: 32px;
+            }
+        }
+        @mixin col-imgs () {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        // founded year
+        .founded-year {
+            margin-top: 60px;
+            margin-bottom: 60px;
+            .container {  
+                @include container();
+                .col {          
+                    // imgs
+                    .col-imgs {
+                        @include col-imgs();
+                        .sushi-img {
+                            width: 100%;
+                            margin: 0;
+                        }
+                        .crab-img {
+                            position: static;
+                            width: 100%;
+                            margin: 0;
+                        }
+                    }
+                    // text
+                    .col-text {
+                        @include col-text();
+                    }
+                }
+            }
+        }
+        // where began
+        .where-began {
+            margin-bottom: 60px;
+            .container {
+                @include container();
+                .col {
+                    &:first-child {
+                        order: 2
+                    }
+                    &:last-child {
+                        order: 1
+                    }
+                    // imgs
+                    .col-imgs {
+                        @include col-imgs();
+                        .chief-img {
+                            order: 2;
+                            margin: 0;
+                            width: 100%;
+                            position: static;
+
+                        }
+                        .light-img {
+                            order: 1;
+                            margin: 0;
+                            width: 100%;
+                            position: static;                         
+                        }
+                    }
+                    // text
+                    .col-text {
+                        @include col-text();
+                    }
+                }
+            }
+        }
+        // chef img
+        .chefs-img {
+            margin-bottom: 60px
+        }
+        // enjoy our food
+        .enjoy-our-food {
+            margin-bottom: 60px;
+            .container {
+                @include container();
+                .col {
+                    // text
+                    .col-text {
+                        @include col-text();
+                        margin-bottom: 20px
+                    }
+                    // imgs
+                    .col-imgs {
+                        @include col-imgs();
+                        .sushi-california-img {
+                            position: static;
+                            width: 100%;
+                            margin: 0;
+                        }
+                        .sushi-wasabi-img {
+                            position: static;
+                            width: 100%;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        // join us 
+        .join-us {
+            margin-bottom: 60px;
+            .container {
+                @include container();
+                .col {
+                    &:last-child {
+                        order: 1;
+                    }
+                    &:first-child {
+                        order: 2;
+                    }
+                    // text
+                    .col-text {
+                        @include col-text();
+                        margin-bottom: 20px;
+                    }
+                    // imgs
+                    .col-imgs {
+                        @include col-imgs();
+                        .ramen-img {
+                            position: static;
+                            margin: 0;
+                            width: 100%;
+                        }
+                        .smoothie-img {
+                            position: static;
+                            margin: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

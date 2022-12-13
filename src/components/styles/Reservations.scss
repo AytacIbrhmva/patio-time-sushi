@@ -1,0 +1,178 @@
+@import './variable';
+
+.reservations {
+    background-color: $bg-dark;
+    padding-top: 160px;
+    .container {       
+        // imgs
+        .imgs {
+            display: flex;
+            justify-content: space-between;
+            .col {
+                // left img
+                .left-img {
+                    width: 791.56px;
+                    margin-right: 10px;
+                }
+                // right bottom
+                .right-bottom-img {
+                    width: 366px;
+                }
+                // right top img
+                .right-top-img {
+                    width: 366px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        // online reserv
+        .online-reservation {
+            display: flex;
+            justify-content: space-between;
+            margin: 90px 0 100px 0;
+            .col {
+                &:first-child {
+                    margin-right: 70px;
+                }
+                // heading
+                .heading {
+                    display: flex;
+                    color: #dd5903;
+                    font-size: 16px;
+                    font-family: "Jost", sans-serif;
+                    font-weight: 600;
+                    position: relative;
+                    align-items: center;
+                    margin-right: 440px;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: 0;
+                        width: 70px;
+                        height: 2px;
+                        background-color: #dd5903; 
+                        opacity: 0.5;
+                    }
+                }
+                // title
+                .title {
+                    margin: 20px 0;
+                    color: #fff;
+                    font-size: 66px;
+                    font-weight: 600;
+                    font-family: 'Cormorant Garamond', serif;
+                }
+                // desc
+                .desc {
+                    color: #fff;
+                    font-size: 18px;
+                    font-family: "Jost", sans-serif;
+                    font-weight: 400;
+                    line-height: 29.88px;
+                }
+                // select
+                select {
+                    display: flex;
+                    flex-direction: column;
+                    width: 380px;
+                    padding: 10px 0;
+                    margin-bottom: 30px;
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: "Jost", sans-serif;
+                    font-weight: 600;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.62);
+                    &:focus {
+                        outline: none;
+                    }
+                    option {
+                        background-color: $bg-dark;
+                        color: #fff;
+                    }
+                }
+                // cta
+                .cta {
+                    cursor: pointer;
+                    padding: 10px 25px;
+                    background-color: #dd5903;
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: 'Jost', sans-serif;
+                    text-decoration: none;
+                    transition: 450ms;
+                    text-align: center;
+                    &:hover {
+                        transform: translateY(-2px);
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .reservations {
+        padding-top: 100px;
+        .container { 
+            // imgs
+            .imgs {          
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+                .col {
+                    .left-img {
+                        width: 100%;
+                        margin: 0;
+                        margin-bottom: 10px;
+                    }
+                    &:last-child {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        img {
+                            width: 100%;
+                            margin: 0;
+                            &:first-child {
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            // online reservation
+            .online-reservation {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                margin-bottom: 50px;
+                .col {
+                    width: 100%;
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                    // heading 
+                    .heading {
+                        margin: 0;
+                    }
+                    // title 
+                    .title {
+                        font-size: 38px;
+                    }
+                    // select
+                    select {
+                       width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

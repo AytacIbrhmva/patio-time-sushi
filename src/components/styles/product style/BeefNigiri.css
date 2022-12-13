@@ -1,0 +1,290 @@
+.beef-nigiri {
+  background-color: #0E0D0A;
+}
+.beef-nigiri .hero {
+  background-image: url("https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/ahtziri-lagarde-EOSVTJIbtLo-unsplash.jpg");
+  height: 61vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.beef-nigiri .hero h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  padding-top: 20px;
+}
+.beef-nigiri .hero .hero-nav {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 110px;
+}
+.beef-nigiri .hero .hero-nav .nav-link {
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: 500ms;
+}
+.beef-nigiri .hero .hero-nav .nav-link:hover {
+  color: rgb(207, 207, 207);
+}
+.beef-nigiri .hero .hero-nav .slash {
+  color: #fff;
+  font-size: 12px;
+  margin: 0 5px;
+}
+.beef-nigiri .add-to-cart {
+  margin-bottom: 100px;
+}
+.beef-nigiri .add-to-cart .container {
+  display: flex;
+  justify-content: space-between;
+}
+.beef-nigiri .add-to-cart .container .img-container {
+  overflow: hidden;
+  height: 500px;
+}
+.beef-nigiri .add-to-cart .container .img-container .meal-img {
+  width: 550px;
+  transition: 0.5s all ease-in-out;
+}
+.beef-nigiri .add-to-cart .container .img-container .meal-img:hover {
+  transform: scale(1.5);
+}
+.beef-nigiri .add-to-cart .container .adding {
+  display: flex;
+  flex-direction: column;
+}
+.beef-nigiri .add-to-cart .container .adding .title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+}
+.beef-nigiri .add-to-cart .container .adding .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.beef-nigiri .add-to-cart .container .adding .rating .star {
+  color: #FFC107;
+}
+.beef-nigiri .add-to-cart .container .adding .rating .customer-review {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.beef-nigiri .add-to-cart .container .adding .prices {
+  color: #fff;
+  font-size: 21px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+}
+.beef-nigiri .add-to-cart .container .adding .prices .old-price {
+  text-decoration: line-through;
+  color: #767676;
+  margin-right: 10px;
+}
+.beef-nigiri .add-to-cart .container .adding .desc {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  width: 550px;
+  margin: 30px 0;
+}
+.beef-nigiri .add-to-cart .container .adding .counter-btns {
+  margin-bottom: 30px;
+}
+.beef-nigiri .add-to-cart .container .adding .counter-btns .btn {
+  cursor: pointer;
+  color: rgb(243, 23, 23);
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.beef-nigiri .add-to-cart .container .adding .counter-btns .plus, .beef-nigiri .add-to-cart .container .adding .counter-btns .minus {
+  width: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.264);
+  color: #fff;
+}
+.beef-nigiri .add-to-cart .container .adding .counter-btns .count {
+  width: 70px;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.264);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.264);
+  color: #fff;
+}
+.beef-nigiri .add-to-cart .container .adding .counter-btns .cta {
+  padding: 10px 40px;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  margin-left: 10px;
+  transition: 500ms;
+}
+.beef-nigiri .add-to-cart .container .adding .counter-btns .cta:hover {
+  background-color: #dd5903;
+  border: 1px solid #dd5903;
+  transform: translateY(-2px);
+  color: #fff;
+}
+.beef-nigiri .add-to-cart .container .adding .category, .beef-nigiri .add-to-cart .container .adding .tags {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.beef-nigiri .add-to-cart .container .adding .category .bold, .beef-nigiri .add-to-cart .container .adding .tags .bold {
+  font-weight: 600;
+}
+.beef-nigiri .add-to-cart .container .adding .tags {
+  margin-bottom: 0;
+}
+.beef-nigiri .beef-nigiri-desc-reviews {
+  margin-bottom: 100px;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .titles {
+  display: flex;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .titles .title {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .titles .title:hover {
+  color: #767676;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .titles .active-title {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
+  margin-right: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .titles .active-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #dd5903;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(118, 118, 118, 0.5254901961);
+  margin: -1px 0 40px 0;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-desc .desc {
+  color: #FFF;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  line-height: 29.88px;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-reviews .review {
+  display: flex;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-reviews .review .review-img-left {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-reviews .review .review-right {
+  margin-left: 30px;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-reviews .review .review-right .header {
+  margin-bottom: 15px;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-reviews .review .review-right .header .name {
+  color: #FFF;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-reviews .review .review-right .header .date {
+  color: rgb(181, 174, 174);
+  font-size: 12px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-reviews .review .review-right .comment {
+  color: #FFF;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .beef-nigiri-reviews .review .review-right .rating .star {
+  color: #FFC107;
+  font-size: 16px;
+}
+.beef-nigiri .beef-nigiri-desc-reviews .container .d-none {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .beef-nigiri .hero {
+    margin-bottom: 50px;
+  }
+  .beef-nigiri .hero h1 {
+    font-size: 48px;
+  }
+  .beef-nigiri .add-to-cart {
+    margin-bottom: 50px;
+  }
+  .beef-nigiri .add-to-cart .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .beef-nigiri .add-to-cart .container .img-container {
+    margin-bottom: 30px;
+    height: 100%;
+    width: 100%;
+  }
+  .beef-nigiri .add-to-cart .container .img-container .meal-img {
+    width: 100%;
+  }
+  .beef-nigiri .add-to-cart .container .adding .title {
+    font-size: 24px;
+  }
+  .beef-nigiri .add-to-cart .container .adding .desc {
+    width: 100%;
+  }
+  .beef-nigiri .add-to-cart .container .adding .counter-btns {
+    display: flex;
+  }
+  .beef-nigiri .add-to-cart .container .adding .counter-btns .cta {
+    width: 100%;
+  }
+}/*# sourceMappingURL=BeefNigiri.css.map */

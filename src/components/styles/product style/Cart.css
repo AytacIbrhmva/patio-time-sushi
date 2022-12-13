@@ -1,0 +1,412 @@
+.cart {
+  background-color: #0E0D0A;
+}
+.cart .hero {
+  background-image: url("https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/ahtziri-lagarde-EOSVTJIbtLo-unsplash.jpg");
+  height: 61vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart .hero h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  padding-top: 20px;
+}
+.cart .hero .hero-nav {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 110px;
+}
+.cart .hero .hero-nav .nav-link {
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: 500ms;
+}
+.cart .hero .hero-nav .nav-link:hover {
+  color: rgb(207, 207, 207);
+}
+.cart .hero .hero-nav .slash {
+  color: #fff;
+  font-size: 12px;
+  margin: 0 5px;
+}
+.cart .product-table {
+  padding: 100px 0;
+}
+.cart .product-table .container .tablet-table {
+  display: none;
+}
+.cart .product-table .container .desktop-table {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.264);
+}
+.cart .product-table .container .desktop-table thead {
+  width: 100%;
+}
+.cart .product-table .container .desktop-table thead tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.264);
+  height: 60px;
+  padding: 16px 50px;
+}
+.cart .product-table .container .desktop-table thead tr th {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  height: 40px;
+  width: 180px;
+}
+.cart .product-table .container .desktop-table thead tr th:last-child {
+  width: 100px;
+}
+.cart .product-table .container .desktop-table tbody tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.264);
+  height: 133px;
+  padding: 16px 50px;
+}
+.cart .product-table .container .desktop-table tbody tr td {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  width: 180px;
+}
+.cart .product-table .container .desktop-table tbody tr td:last-child {
+  width: 100px;
+}
+.cart .product-table .container .desktop-table tbody tr td .close-icon {
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+.cart .product-table .container .desktop-table tbody tr td .close-icon:hover {
+  background-color: red;
+}
+.cart .product-table .container .desktop-table tbody tr td .product-img {
+  width: 100px;
+  height: 100px;
+}
+.cart .product-table .container .desktop-table tbody tr td .counter-btns .btn {
+  cursor: pointer;
+  color: rgb(243, 23, 23);
+  font-size: 15px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  padding: 10px 0;
+}
+.cart .product-table .container .desktop-table tbody tr td .counter-btns .plus, .cart .product-table .container .desktop-table tbody tr td .counter-btns .minus {
+  width: 40px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.264);
+  color: #fff;
+}
+.cart .product-table .container .desktop-table tbody tr td .counter-btns .count {
+  width: 70px;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.264);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.264);
+  color: #fff;
+}
+.cart .product-table .container .desktop-table tfoot tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 50px;
+}
+.cart .product-table .container .desktop-table tfoot tr td {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart .product-table .container .desktop-table tfoot tr td form {
+  display: flex;
+}
+.cart .product-table .container .desktop-table tfoot tr td form input {
+  width: 150px;
+  height: 45px;
+  padding: 0 5px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.374);
+  color: #fff;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.cart .product-table .container .desktop-table tfoot tr td form input:focus {
+  outline: none;
+}
+.cart .product-table .container .desktop-table tfoot tr td form .submit-btn {
+  cursor: pointer;
+  padding: 0 30px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #000;
+  transition: 0.3s;
+  height: 45px;
+}
+.cart .product-table .container .desktop-table tfoot tr td form .submit-btn:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  background-color: #dd5903;
+  border: 1px solid #dd5903;
+}
+.cart .product-table .container .desktop-table tfoot tr td .cta {
+  cursor: pointer;
+  padding: 0 30px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #000;
+  transition: 0.3s;
+  height: 45px;
+}
+.cart .product-table .container .desktop-table tfoot tr td .cta:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  background-color: #dd5903;
+  border: 1px solid #dd5903;
+}
+.cart .cart-totals {
+  display: flex;
+  justify-content: end;
+}
+.cart .cart-totals .container {
+  width: 565px;
+}
+.cart .cart-totals .container .title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  margin-bottom: 40px;
+}
+.cart .cart-totals .container .total-price {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.264);
+  margin-bottom: 20px;
+}
+.cart .cart-totals .container .total-price .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 150px 16px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.264);
+}
+.cart .cart-totals .container .total-price .row:last-child {
+  border: 0;
+}
+.cart .cart-totals .container .total-price .row .col {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.cart .cart-totals .container .cta {
+  cursor: pointer;
+  padding: 0 30px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  color: #000;
+  transition: 0.3s;
+  width: 100%;
+  height: 70px;
+}
+.cart .cart-totals .container .cta:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  background-color: #dd5903;
+  border: 1px solid #dd5903;
+}
+
+@media only screen and (max-width: 768px) {
+  .cart .product-table .container .desktop-table {
+    display: none;
+  }
+  .cart .product-table .container .tablet-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+  }
+  .cart .product-table .container .tablet-table .product {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.374);
+  }
+  .cart .product-table .container .tablet-table .product .close-icon {
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 100%;
+    transition: 0.3s;
+    color: #fff;
+    align-self: center;
+  }
+  .cart .product-table .container .tablet-table .product .close-icon:hover {
+    background-color: red;
+  }
+  .cart .product-table .container .tablet-table .product tbody {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .cart .product-table .container .tablet-table .product tbody tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart .product-table .container .tablet-table .product tbody tr th {
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 15px;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    padding: 20px 0;
+  }
+  .cart .product-table .container .tablet-table .product tbody tr td {
+    color: #fff;
+    font-size: 16px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    padding: 20px 0;
+    text-align: right;
+  }
+  .cart .product-table .container .tablet-table .product tbody tr td .counter-btns .btn {
+    cursor: pointer;
+    color: rgb(243, 23, 23);
+    font-size: 15px;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+  }
+  .cart .product-table .container .tablet-table .product tbody tr td .counter-btns .plus, .cart .product-table .container .tablet-table .product .desktop-table tbody tr td .counter-btns .minus, .cart .product-table .container .desktop-table .tablet-table .product tbody tr td .counter-btns .minus {
+    width: 40px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+    color: #fff;
+  }
+  .cart .product-table .container .tablet-table .product tbody tr td .counter-btns .minus {
+    width: 40px;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.264);
+    color: #fff;
+  }
+  .cart .product-table .container .tablet-table .product tbody tr td .counter-btns .count {
+    width: 50px;
+    height: 42px;
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.264);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.264);
+    color: #fff;
+  }
+  .cart .product-table .container .tablet-table tfoot tr {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  .cart .product-table .container .tablet-table tfoot tr td:last-child {
+    margin-top: 10px;
+  }
+  .cart .product-table .container .tablet-table tfoot tr td form {
+    display: flex;
+  }
+  .cart .product-table .container .tablet-table tfoot tr td form input {
+    width: 50%;
+    height: 45px;
+    padding: 0 5px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.374);
+    color: #fff;
+    font-size: 16px;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  .cart .product-table .container .tablet-table tfoot tr td form input:focus {
+    outline: none;
+  }
+  .cart .product-table .container .tablet-table tfoot tr td form .submit-btn {
+    cursor: pointer;
+    padding: 0 30px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    color: #000;
+    transition: 0.3s;
+    width: 50%;
+    height: 45px;
+  }
+  .cart .product-table .container .tablet-table tfoot tr td form .submit-btn:hover {
+    transform: translateY(-2px);
+    color: #fff;
+    background-color: #dd5903;
+    border: 1px solid #dd5903;
+  }
+  .cart .product-table .container .tablet-table tfoot tr td .cta {
+    cursor: pointer;
+    padding: 0 30px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    color: #000;
+    transition: 0.3s;
+    width: 100%;
+    height: 45px;
+  }
+  .cart .product-table .container .tablet-table tfoot tr td .cta:hover {
+    transform: translateY(-2px);
+    color: #fff;
+    background-color: #dd5903;
+    border: 1px solid #dd5903;
+  }
+  .cart .cart-totals .container {
+    width: 100%;
+  }
+  .cart .cart-totals .container .total-price .row {
+    padding: 16px;
+  }
+}/*# sourceMappingURL=Cart.css.map */

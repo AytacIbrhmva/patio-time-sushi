@@ -1,0 +1,147 @@
+.reservations {
+  background-color: #0E0D0A;
+  padding-top: 160px;
+}
+.reservations .container .imgs {
+  display: flex;
+  justify-content: space-between;
+}
+.reservations .container .imgs .col .left-img {
+  width: 791.56px;
+  margin-right: 10px;
+}
+.reservations .container .imgs .col .right-bottom-img {
+  width: 366px;
+}
+.reservations .container .imgs .col .right-top-img {
+  width: 366px;
+  margin-bottom: 5px;
+}
+.reservations .container .online-reservation {
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 0 100px 0;
+}
+.reservations .container .online-reservation .col:first-child {
+  margin-right: 70px;
+}
+.reservations .container .online-reservation .col .heading {
+  display: flex;
+  color: #dd5903;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  position: relative;
+  align-items: center;
+  margin-right: 440px;
+}
+.reservations .container .online-reservation .col .heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  opacity: 0.5;
+}
+.reservations .container .online-reservation .col .title {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 66px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+}
+.reservations .container .online-reservation .col .desc {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  line-height: 29.88px;
+}
+.reservations .container .online-reservation .col select {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.62);
+}
+.reservations .container .online-reservation .col select:focus {
+  outline: none;
+}
+.reservations .container .online-reservation .col select option {
+  background-color: #0E0D0A;
+  color: #fff;
+}
+.reservations .container .online-reservation .col .cta {
+  cursor: pointer;
+  padding: 10px 25px;
+  background-color: #dd5903;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+  transition: 450ms;
+  text-align: center;
+}
+.reservations .container .online-reservation .col .cta:hover {
+  transform: translateY(-2px);
+}
+
+@media only screen and (max-width: 768px) {
+  .reservations {
+    padding-top: 100px;
+  }
+  .reservations .container .imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .reservations .container .imgs .col .left-img {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .reservations .container .imgs .col:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .reservations .container .imgs .col:last-child img {
+    width: 100%;
+    margin: 0;
+  }
+  .reservations .container .imgs .col:last-child img:first-child {
+    margin-bottom: 15px;
+  }
+  .reservations .container .online-reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .reservations .container .online-reservation .col {
+    width: 100%;
+  }
+  .reservations .container .online-reservation .col:first-child {
+    margin-bottom: 20px;
+  }
+  .reservations .container .online-reservation .col .heading {
+    margin: 0;
+  }
+  .reservations .container .online-reservation .col .title {
+    font-size: 38px;
+  }
+  .reservations .container .online-reservation .col select {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Reservations.css.map */

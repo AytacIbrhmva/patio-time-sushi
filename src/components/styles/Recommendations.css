@@ -1,0 +1,328 @@
+.recommendations {
+  background-color: #0E0D0A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.recommendations .recommend-heading {
+  position: relative;
+  color: #dd5903;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  letter-spacing: 1px;
+}
+.recommendations .recommend-heading::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  left: 0;
+}
+.recommendations .recommend-heading::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  right: 0;
+}
+.recommendations .recommend-title {
+  color: #fff;
+  font-size: 74px;
+  font-family: "Cormorant Garamond", sans-serif;
+  font-weight: 600;
+  padding: 20px 0 50px 0;
+}
+.recommendations .recommend-menus {
+  padding: 150px 0;
+  width: 100%;
+  background-image: url("https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/jesse-ballantyne-9r5kHbw51fk-unsplash-1.jpg");
+  background-size: cover;
+}
+.recommendations .recommend-menus .container {
+  display: flex;
+  justify-content: space-between;
+}
+.recommendations .recommend-menus .container .col {
+  background-color: rgba(3, 3, 3, 0.8078431373);
+  padding: 20px;
+  border: 2px solid #fff;
+}
+.recommendations .recommend-menus .container .col .menu-type {
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  color: #fff;
+  text-align: center;
+}
+.recommendations .recommend-menus .container .col .menu-times {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+  margin: 20px 0;
+}
+.recommendations .recommend-menus .container .col .menu-list {
+  list-style: none;
+  color: #fff;
+}
+.recommendations .recommend-menus .container .col .menu-list .menu-item {
+  padding: 20px;
+}
+.recommendations .recommend-menus .container .col .menu-list .menu-item .meal-name {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  font-weight: 500;
+  font-family: "Jost", sans-serif;
+}
+.recommendations .recommend-menus .container .col .menu-list .menu-item .meal-name .line {
+  width: 100px;
+  height: 1px;
+  background-color: rgb(206, 191, 191);
+  margin: 0 10px;
+  opacity: 0.2;
+}
+.recommendations .recommend-menus .container .col .menu-list .meal-japanese-name {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: rgba(255, 255, 255, 0.4);
+}
+.recommendations .popular {
+  margin-top: -4px;
+}
+.recommendations .la-carte, .recommendations .popular {
+  display: flex;
+  justify-content: space-between;
+}
+.recommendations .la-carte .col .col-img, .recommendations .popular .col .col-img {
+  width: 450px;
+}
+.recommendations .la-carte .col .col-text, .recommendations .popular .col .col-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.recommendations .la-carte .col .col-text .col-heading, .recommendations .popular .col .col-text .col-heading {
+  color: #dd5903;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 90px;
+}
+.recommendations .la-carte .col .col-text .col-heading::after, .recommendations .popular .col .col-text .col-heading::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  opacity: 0.5;
+  left: 0;
+}
+.recommendations .la-carte .col .col-text .col-heading::before, .recommendations .popular .col .col-text .col-heading::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  opacity: 0.5;
+  right: 0;
+}
+.recommendations .la-carte .col .col-text .col-title, .recommendations .popular .col .col-text .col-title {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  margin: 20px 0;
+}
+.recommendations .la-carte .col .col-text .col-desc, .recommendations .popular .col .col-text .col-desc {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0 60px;
+  color: #fff;
+}
+.recommendations .la-carte .col .col-text .cta, .recommendations .popular .col .col-text .cta {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.recommendations .la-carte .col .col-text .cta::after, .recommendations .popular .col .col-text .cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dd5903;
+  transition: 450ms;
+}
+.recommendations .la-carte .col .col-text .cta:hover::after, .recommendations .popular .col .col-text .cta:hover::after {
+  width: 0;
+}
+.recommendations .quiet-space {
+  margin: 150px 0;
+  width: 100%;
+}
+.recommendations .quiet-space .container {
+  display: flex;
+  justify-content: space-between;
+}
+.recommendations .quiet-space .container .col {
+  display: flex;
+  flex-direction: column;
+}
+.recommendations .quiet-space .container .col .sushi-img {
+  width: 500px;
+}
+.recommendations .quiet-space .container .col .flower-img {
+  margin-top: 70px;
+  width: 580px;
+}
+.recommendations .quiet-space .container .col .col-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.recommendations .quiet-space .container .col .col-text .col-heading {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #dd5903;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding-right: 90px;
+}
+.recommendations .quiet-space .container .col .col-text .col-heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  opacity: 0.5;
+}
+.recommendations .quiet-space .container .col .col-text .col-title {
+  color: #fff;
+  font-size: 74px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  margin: 20px 0;
+}
+.recommendations .quiet-space .container .col .col-text .col-desc {
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.recommendations .quiet-space .container .col .col-text .cta {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.recommendations .quiet-space .container .col .col-text .cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dd5903;
+  transition: 450ms;
+}
+.recommendations .quiet-space .container .col .col-text .cta:hover::after {
+  width: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .recommendations .recommend-title {
+    font-size: 42px;
+  }
+  .recommendations .recommend-menus {
+    height: 100%;
+    background-position: center;
+    margin-bottom: 50px;
+  }
+  .recommendations .recommend-menus .container {
+    flex-direction: column;
+  }
+  .recommendations .la-carte {
+    flex-direction: column;
+  }
+  .recommendations .la-carte .col:nth-child(1) {
+    order: 2;
+  }
+  .recommendations .la-carte .col:nth-child(2) {
+    order: 1;
+    margin-bottom: 50px;
+  }
+  .recommendations .la-carte .col:nth-child(3) {
+    margin-top: -4px;
+    order: 3;
+    margin-bottom: 50px;
+  }
+  .recommendations .la-carte .col .col-img {
+    width: 100%;
+  }
+  .recommendations .la-carte .col .col-text .col-title {
+    font-size: 32px;
+  }
+  .recommendations .popular {
+    flex-direction: column;
+  }
+  .recommendations .popular .col:nth-child(1) {
+    margin-bottom: 50px;
+  }
+  .recommendations .popular .col:nth-child(2) {
+    margin-bottom: -4px;
+  }
+  .recommendations .popular .col .col-img {
+    width: 100%;
+  }
+  .recommendations .popular .col .col-text .col-title {
+    font-size: 32px;
+  }
+  .recommendations .quiet-space {
+    margin: 60px 0;
+  }
+  .recommendations .quiet-space .container {
+    flex-direction: column;
+  }
+  .recommendations .quiet-space .container .col:nth-child(1) {
+    margin-bottom: 50px;
+  }
+  .recommendations .quiet-space .container .col .sushi-img {
+    width: 100%;
+  }
+  .recommendations .quiet-space .container .col .flower-img {
+    width: 100%;
+  }
+  .recommendations .quiet-space .container .col .col-text .col-title {
+    font-size: 42px;
+  }
+}/*# sourceMappingURL=Recommendations.css.map */

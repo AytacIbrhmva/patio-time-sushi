@@ -1,0 +1,144 @@
+@import './variable';
+
+.news {
+    background-color: $bg-dark;
+    // hero
+    .hero {
+        background-image: url('https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/ahtziri-lagarde-9py8hml1Rko-unsplash.jpg');
+        height: 75vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 120px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        h1 {
+            color: #fff;
+            font-size: 80px;
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+            z-index: 1;
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+    }
+    // main
+    .container {
+        margin-bottom: 120px;
+        .news-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .card {
+                margin-bottom: 70px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                // top
+                .card-top {
+                    overflow: hidden;
+                    display: inline-block;
+                    .card-img-top {
+                        width: 808px;
+                        transition: 500ms;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                //body
+                .card-body {
+                    .card-heading {
+                        font-size: 13px;
+                        font-weight: 400;
+                        font-family: "Jost", sans-serif;
+                        color: rgb(162, 157, 157);
+                        margin-top: 20px;
+                        .text-orange {
+                            color: $orange;
+                            font-weight: 500;
+                        }
+                    }
+                    .card-title {
+                        font-size: 32px;
+                        font-weight: 600;
+                        font-family: 'Cormorant Garamond', serif;
+                        color: #fff;
+                        margin: 20px 0;
+                    }
+                    .card-desc {
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: "Jost", sans-serif;
+                        color: #fff;
+                        margin-bottom: 20px;
+                        width: 808px;
+                    }
+                    .card-cta {
+                        text-decoration: none;
+                        font-size: 13px;
+                        font-weight: 500;
+                        font-family: "Jost", sans-serif;
+                        color: #fff;
+                        position: relative;
+                        padding-bottom: 5px;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 2px;
+                            background-color: #dd5903;
+                            transition: 450ms;
+                        }
+                        &:hover::after {
+                            width: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .news {
+        .hero {
+            margin-bottom: 50px;
+            h1 {
+                font-size: 48px;
+            }
+        }
+        .container {
+            margin-bottom: 80px;
+            .news-cards {
+                .card {
+                    width: 100%;
+                    // top
+                    .card-top {
+                        .card-img-top {
+                            width: 100%;
+                        }
+                    }
+                    // body
+                    .card-body {
+                        .card-desc {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

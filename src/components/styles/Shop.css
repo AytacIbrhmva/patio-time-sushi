@@ -1,0 +1,193 @@
+.shop {
+  background-color: #0E0D0A;
+}
+.shop .hero {
+  background-image: url("https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/ahtziri-lagarde-EOSVTJIbtLo-unsplash.jpg");
+  height: 61vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 90px;
+}
+.shop .hero h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  padding-top: 20px;
+}
+.shop .hero .shop-nav {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 110px;
+}
+.shop .hero .shop-nav .nav-link {
+  font-family: "Jost", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: 500ms;
+}
+.shop .hero .shop-nav .nav-link:hover {
+  color: rgb(207, 207, 207);
+}
+.shop .hero .shop-nav .slash {
+  color: #fff;
+  font-size: 12px;
+  margin: 0 5px;
+}
+.shop .container {
+  margin-bottom: 90px;
+}
+.shop .container .sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.shop .container .sorting .desc {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.shop .container .sorting select {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding-bottom: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.62);
+}
+.shop .container .sorting select:focus {
+  outline: none;
+}
+.shop .container .sorting select option {
+  background-color: #0E0D0A;
+  color: #fff;
+}
+.shop .container .shop-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.shop .container .shop-cards .card .link {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.shop .container .shop-cards .card .link .card-img-top {
+  width: 257.6px;
+  height: 257.6px;
+  position: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.shop .container .shop-cards .card .link .card-img-top .sale {
+  position: absolute;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  background-color: #dd5903;
+  border-radius: 50%;
+  padding: 12px;
+  margin-bottom: 200px;
+  margin-right: 180px;
+}
+.shop .container .shop-cards .card .link .card-img-top .add-link {
+  color: #000;
+  background-color: #fff;
+  padding: 10px 50px;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  opacity: 0;
+}
+.shop .container .shop-cards .card .link .card-img-top .add-link:hover {
+  background-color: #dd5903;
+  color: #fff;
+}
+.shop .container .shop-cards .card .link:hover .add-link {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.shop .container .shop-cards .card .card-body {
+  text-align: center;
+}
+.shop .container .shop-cards .card .card-body .card-title {
+  color: #fff;
+  font-size: 21px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+}
+.shop .container .shop-cards .card .card-body .prices {
+  color: rgb(173, 172, 172);
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.shop .container .shop-cards .card .card-body .prices .old-price {
+  text-decoration: line-through;
+  color: #767676;
+  margin-right: 5px;
+}
+.shop .container .shop-cards .card .card-body .rating {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.shop .container .shop-cards .card .card-body .rating .star {
+  color: #FFC107;
+}
+
+@media only screen and (max-width: 500px) {
+  .shop .hero {
+    margin-bottom: 70px;
+  }
+  .shop .hero h1 {
+    font-size: 48px;
+  }
+  .shop .container {
+    margin-bottom: 100px;
+  }
+  .shop .container .sorting {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .shop .container .sorting .desc {
+    margin-bottom: 10px;
+  }
+  .shop .container .sorting select {
+    width: 100%;
+  }
+  .shop .container .shop-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .shop .container .shop-cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=Shop.css.map */

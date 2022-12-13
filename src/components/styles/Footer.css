@@ -1,0 +1,56 @@
+footer {
+    background-color: #0E0D0A;
+    padding: 100px  0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: 450ms;
+}
+
+footer a:hover {
+    color: #dd5903;
+}
+
+.footer-logo {
+    height: 130px;
+    margin-bottom: 40px;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+
+footer .line {
+    width: 2px;
+    height: 20px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+footer .mails {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+footer .social-media-icon {
+    color: #fff;
+    font-size: 20px;
+    margin: 40px 10px 0 10px ;
+    cursor: pointer;
+    transition: 450ms;
+}
+
+footer .social-media-icon:hover {
+    color: #dd5903;
+}
+

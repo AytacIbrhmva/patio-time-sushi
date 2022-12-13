@@ -1,0 +1,214 @@
+@import './variable';
+
+.shop {
+    background-color: $bg-dark;
+    // hero
+    .hero {
+        background-image: url('https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/ahtziri-lagarde-EOSVTJIbtLo-unsplash.jpg');
+        height: 61vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin-bottom: 90px;
+        h1 {
+            color: #fff;
+            font-size: 60px;
+            font-weight: 600;
+            font-family: 'Cormorant Garamond', serif;
+            padding-top: 20px;
+        }
+        // nav
+        .shop-nav {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            margin-top: 110px;
+            .nav-link {
+                font-family: "Jost", sans-serif;
+                font-size: 12px;
+                font-weight: 400;
+                color: #fff;
+                text-decoration: none;
+                transition: 500ms;
+                &:hover {
+                    color: rgb(207, 207, 207);
+                }
+            }
+            .slash {
+                color: #fff;
+                font-size: 12px;
+                margin: 0 5px;
+            }
+        }
+    }
+    // main
+    .container {
+        margin-bottom: 90px;
+        // sorting
+        .sorting {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            .desc {
+                font-family: "Jost", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                color: #fff;
+            }
+            select {
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                padding-bottom: 5px;
+                color: #fff;
+                font-size: 16px;
+                font-family: "Jost", sans-serif;
+                font-weight: 400;
+                background-color: transparent;
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.62);
+                &:focus {
+                    outline: none;
+                }
+                option {
+                    background-color: $bg-dark;
+                    color: #fff;
+                }
+            }
+        }
+        // cards
+        .shop-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .card {
+                // top
+                .link {
+                    text-decoration: none;
+                    transition: .5s;
+                    .card-img-top {
+                        width: 257.6px;
+                        height: 257.6px;
+                        position: relative;
+                        background-repeat: no-repeat;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        .sale {
+                            position: absolute;
+                            color: #fff;
+                            font-size: 14px;
+                            font-family: "Jost", sans-serif;
+                            font-weight: 400;
+                            background-color: #dd5903;   
+                            border-radius: 50%;
+                            padding: 12px;
+                            margin-bottom: 200px;
+                            margin-right: 180px;
+                        }
+                        .add-link {                     
+                            color: #000;
+                            background-color: #fff;
+                            padding: 10px 50px;
+                            text-decoration: none;
+                            font-size: 12px;
+                            font-family: "Jost", sans-serif;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            margin-bottom: 30px;
+                            transition: .5s;
+                            transform: scaleY(0);
+                            transform-origin: bottom;
+                            opacity: 0;
+                            &:hover {
+                                background-color: #dd5903;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    &:hover .add-link {
+                        transform: scaleY(1);
+                        opacity: 1;
+                    }
+                }
+                // body
+                .card-body {
+                    text-align: center;
+                    .card-title {
+                        color: #fff;
+                        font-size: 21px;
+                        font-family: 'Cormorant Garamond', serif;
+                        font-weight: 600;
+                        margin: 20px 0 10px 0;
+                    }
+                    .prices {
+                        color: rgb(173, 172, 172);
+                        font-size: 16px;
+                        font-family: "Jost", sans-serif;
+                        font-weight: 400;
+                        .old-price {
+                            text-decoration: line-through;
+                            color: #767676;
+                            margin-right: 5px;
+                        }
+                    }
+                    .rating {
+                        margin-top: 5px;
+                        margin-bottom: 30px;
+                        .star {
+                            color: #FFC107;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// tablet
+@media only screen and (max-width: 500px) {
+    .shop {
+        // hero
+        .hero {
+            margin-bottom: 70px;
+            h1 {
+                font-size: 48px;
+            }
+        }
+        // main
+        .container {
+            margin-bottom: 100px;
+            // sorting
+            .sorting {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                .desc {
+                    margin-bottom: 10px;
+                }
+                select {
+                    width: 100%;
+                }
+            }
+            // cards 
+            .shop-cards {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                }
+            }
+        }
+    }
+}

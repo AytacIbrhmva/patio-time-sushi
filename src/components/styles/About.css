@@ -1,0 +1,505 @@
+.about {
+  background-color: #0E0D0A;
+}
+.about .hero {
+  background-image: url("https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/jesse-ballantyne-9r5kHbw51fk-unsplash-1.jpg");
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.about .hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.about .hero h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  z-index: 1;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.about .founded-year {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.about .founded-year .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .founded-year .container .col .col-imgs {
+  position: relative;
+}
+.about .founded-year .container .col .col-imgs .sushi-img {
+  width: 370px;
+  margin-top: 150px;
+}
+.about .founded-year .container .col .col-imgs .crab-img {
+  width: 421.22px;
+  margin-left: -145px;
+  position: absolute;
+}
+.about .founded-year .container .col .col-text {
+  width: 450px;
+}
+.about .founded-year .container .col .col-text .heading {
+  display: flex;
+  color: #dd5903;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  position: relative;
+  align-items: center;
+}
+.about .founded-year .container .col .col-text .heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  opacity: 0.5;
+}
+.about .founded-year .container .col .col-text .title {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+}
+.about .founded-year .container .col .col-text .desc {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.about .where-began {
+  margin-bottom: 180px;
+}
+.about .where-began .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .where-began .container .col .col-text {
+  width: 450px;
+}
+.about .where-began .container .col .col-text .heading {
+  display: flex;
+  color: #dd5903;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  position: relative;
+  align-items: center;
+}
+.about .where-began .container .col .col-text .heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  opacity: 0.5;
+}
+.about .where-began .container .col .col-text .title {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+}
+.about .where-began .container .col .col-text .desc {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.about .where-began .container .col .col-imgs .chief-img {
+  width: 453.61px;
+  z-index: 111;
+  position: absolute;
+  margin-left: -450px;
+  margin-top: -300px;
+}
+.about .where-began .container .col .col-imgs .light-img {
+  width: 324.02px;
+  position: absolute;
+  z-index: 1;
+  margin-left: -640px;
+  margin-top: -200px;
+}
+.about .chefs-img {
+  background-image: url("https://patiotime.loftocean.com/demo5/wp-content/uploads/sites/8/2022/05/hennie-stander-sHp2LtuC7Co-unsplash-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  position: relative;
+  margin-bottom: 120px;
+}
+.about .chefs-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.about .enjoy-our-food {
+  margin-bottom: 300px;
+}
+.about .enjoy-our-food .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .enjoy-our-food .container .col .col-text {
+  width: 450px;
+}
+.about .enjoy-our-food .container .col .col-text .heading {
+  display: flex;
+  color: #dd5903;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  position: relative;
+  align-items: center;
+}
+.about .enjoy-our-food .container .col .col-text .heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  opacity: 0.5;
+}
+.about .enjoy-our-food .container .col .col-text .title {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+}
+.about .enjoy-our-food .container .col .col-text .desc {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.about .enjoy-our-food .container .col .col-text .cta {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.about .enjoy-our-food .container .col .col-text .cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dd5903;
+  transition: 450ms;
+}
+.about .enjoy-our-food .container .col .col-text .cta:hover::after {
+  width: 0;
+}
+.about .enjoy-our-food .container .col .col-imgs .sushi-california-img {
+  width: 388.81px;
+  position: absolute;
+  margin-left: -650px;
+  margin-top: -250px;
+}
+.about .enjoy-our-food .container .col .col-imgs .sushi-wasabi-img {
+  width: 324.02px;
+  position: absolute;
+  margin-left: -325px;
+  margin-top: -200px;
+}
+.about .join-us {
+  margin-bottom: 120px;
+}
+.about .join-us .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .join-us .container .col .col-imgs .ramen-img {
+  width: 405.02px;
+  position: absolute;
+  margin-left: -130px;
+  margin-top: -118px;
+}
+.about .join-us .container .col .col-imgs .smoothie-img {
+  width: 370px;
+}
+.about .join-us .container .col .col-text {
+  margin-top: -50px;
+  width: 450px;
+}
+.about .join-us .container .col .col-text .heading {
+  display: flex;
+  color: #dd5903;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  position: relative;
+  align-items: center;
+}
+.about .join-us .container .col .col-text .heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #dd5903;
+  opacity: 0.5;
+}
+.about .join-us .container .col .col-text .title {
+  margin: 20px 0;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+}
+.about .join-us .container .col .col-text .desc {
+  color: #fff;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+.about .join-us .container .col .col-text .cta {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.about .join-us .container .col .col-text .cta::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #dd5903;
+  transition: 450ms;
+}
+.about .join-us .container .col .col-text .cta:hover::after {
+  width: 0;
+}
+.about .join-us .container .col .col-text .jobs-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 45px 0;
+}
+.about .join-us .container .col .col-text .jobs-table tr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px 0;
+  position: relative;
+  padding: 10px 0;
+}
+.about .join-us .container .col .col-text .jobs-table tr::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #6b6969;
+  opacity: 0.3;
+}
+.about .join-us .container .col .col-text .jobs-table tr :nth-child(1)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  top: 0;
+  background-color: #6b6969;
+  opacity: 0.3;
+}
+.about .join-us .container .col .col-text .jobs-table tr .id {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #6b6969;
+}
+.about .join-us .container .col .col-text .jobs-table tr .job {
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 20px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .about .hero {
+    background-position: center;
+    height: 70vh;
+  }
+  .about .hero h1 {
+    font-size: 48px;
+  }
+  .about .founded-year {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .about .founded-year .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .founded-year .container .col .col-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .about .founded-year .container .col .col-imgs .sushi-img {
+    width: 100%;
+    margin: 0;
+  }
+  .about .founded-year .container .col .col-imgs .crab-img {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+  .about .founded-year .container .col .col-text {
+    width: 100%;
+  }
+  .about .founded-year .container .col .col-text .title {
+    font-size: 32px;
+  }
+  .about .where-began {
+    margin-bottom: 60px;
+  }
+  .about .where-began .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .where-began .container .col:first-child {
+    order: 2;
+  }
+  .about .where-began .container .col:last-child {
+    order: 1;
+  }
+  .about .where-began .container .col .col-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .about .where-began .container .col .col-imgs .chief-img {
+    order: 2;
+    margin: 0;
+    width: 100%;
+    position: static;
+  }
+  .about .where-began .container .col .col-imgs .light-img {
+    order: 1;
+    margin: 0;
+    width: 100%;
+    position: static;
+  }
+  .about .where-began .container .col .col-text {
+    width: 100%;
+  }
+  .about .where-began .container .col .col-text .title {
+    font-size: 32px;
+  }
+  .about .chefs-img {
+    margin-bottom: 60px;
+  }
+  .about .enjoy-our-food {
+    margin-bottom: 60px;
+  }
+  .about .enjoy-our-food .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .enjoy-our-food .container .col .col-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about .enjoy-our-food .container .col .col-text .title {
+    font-size: 32px;
+  }
+  .about .enjoy-our-food .container .col .col-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .about .enjoy-our-food .container .col .col-imgs .sushi-california-img {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+  .about .enjoy-our-food .container .col .col-imgs .sushi-wasabi-img {
+    position: static;
+    width: 100%;
+    margin: 0;
+  }
+  .about .join-us {
+    margin-bottom: 60px;
+  }
+  .about .join-us .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .join-us .container .col:last-child {
+    order: 1;
+  }
+  .about .join-us .container .col:first-child {
+    order: 2;
+  }
+  .about .join-us .container .col .col-text {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about .join-us .container .col .col-text .title {
+    font-size: 32px;
+  }
+  .about .join-us .container .col .col-imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .about .join-us .container .col .col-imgs .ramen-img {
+    position: static;
+    margin: 0;
+    width: 100%;
+  }
+  .about .join-us .container .col .col-imgs .smoothie-img {
+    position: static;
+    margin: 0;
+    width: 100%;
+  }
+}/*# sourceMappingURL=About.css.map */
